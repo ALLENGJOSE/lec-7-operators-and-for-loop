@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Main {
+	
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+        int n = s.nextInt();
+        int current=1, count = 1;
+        while(count <= n){
+            int output = 3*current + 2;
+            if(output % 4 !=0){
+                System.out.print(output+" ");
+                count ++;
+            }
+            current ++;
+        }
+	}
+}
